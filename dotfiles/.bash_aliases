@@ -10,10 +10,6 @@ alias top="nice top -j -P -a"																										## top with jail-id, mult
 
 
 ########################
-#### host specific
-
-
-########################
 #### ex.tjanke.dk 
 alias em0="sudo tcpdump -n -e -tttt -i pflog0"																						## tcpdump pflog0
 
@@ -64,17 +60,17 @@ alias addport="sudo ee /usr/local/etc/poudriere.d/port-list"																		##
 alias aaddport="sudo ee /usr/local/etc/poudriere.d/port-apu-list"																	## add port to package build list
 alias waddport="sudo ee /usr/local/etc/poudriere.d/webproxy"																		## add port to package build list
 
-alias checkconfig="sudo poudriere options -j FreeBSD_11-1x64 -p HEAD -f /usr/local/etc/poudriere.d/port-list"						## check build options for new or changed ports
-alias acheckconfig="sudo poudriere options -j FreeBSD_11-1x64-APU -p HEAD-APU -f /usr/local/etc/poudriere.d/port-apu-list"			## check build options for new or changed ports
-alias wcheckconfig="sudo poudriere options -j FreeBSD_11-1x64 -p WEB -f /usr/local/etc/poudriere.d/webproxy"						## check build options for new or changed ports
+alias checkconf="sudo poudriere options -j FreeBSD_11-1x64 -p HEAD -f /usr/local/etc/poudriere.d/port-list"							## check build options for new or changed ports
+alias acheckconf="sudo poudriere options -j FreeBSD_11-1x64-APU -p HEAD-APU -f /usr/local/etc/poudriere.d/port-apu-list"			## check build options for new or changed ports
+alias wcheckconf="sudo poudriere options -j FreeBSD_11-1x64 -p WEB -f /usr/local/etc/poudriere.d/webproxy"							## check build options for new or changed ports
 
-alias checkallconfig="sudo poudriere options -c -j FreeBSD_11-1x64 -p HEAD -f /usr/local/etc/poudriere.d/port-list"					## review options on all ports
-alias acheckallconfig="sudo poudriere options -c -j FreeBSD_11-1x64-APU -p HEAD-APU -f /usr/local/etc/poudriere.d/port-apu-list"	## review options on all ports
-alias wcheckallconfig="sudo poudriere options -c -j FreeBSD_11-1x64 -p WEB -f /usr/local/etc/poudriere.d/webproxy"					## review options on all ports
+alias checkallconf="sudo poudriere options -c -j FreeBSD_11-1x64 -p HEAD -f /usr/local/etc/poudriere.d/port-list"					## review options on all ports
+alias acheckallconf="sudo poudriere options -c -j FreeBSD_11-1x64-APU -p HEAD-APU -f /usr/local/etc/poudriere.d/port-apu-list"		## review options on all ports
+alias wcheckallconf="sudo poudriere options -c -j FreeBSD_11-1x64 -p WEB -f /usr/local/etc/poudriere.d/webproxy"					## review options on all ports
 
-alias reconfig="sudo poudriere options -c -j FreeBSD_11-1x64 -p HEAD"																## review buid options on specific port
-alias areconfig="sudo poudriere options -c -j FreeBSD_11-1x64-APU -p HEAD-APU"														## review buid options on specific port
-alias wreconfig="sudo poudriere options -c -j FreeBSD_11-1x64 -p WEB"																## review buid options on specific port
+alias reconf="sudo poudriere options -c -j FreeBSD_11-1x64 -p HEAD"																	## review buid options on specific port
+alias areconf="sudo poudriere options -c -j FreeBSD_11-1x64-APU -p HEAD-APU"														## review buid options on specific port
+alias wreconf="sudo poudriere options -c -j FreeBSD_11-1x64 -p WEB"																	## review buid options on specific port
 
 alias build="sudo poudriere bulk -j FreeBSD_11-1x64 -p HEAD -f /usr/local/etc/poudriere.d/port-list"								## start build process
 alias abuild="sudo poudriere bulk -j FreeBSD_11-1x64-APU -p HEAD-APU -f /usr/local/etc/poudriere.d/port-apu-list"					## start build process
