@@ -7,6 +7,7 @@ alias mess="sudo tail -F /var/log/messages"																							## tail /var/l
 alias w="whois"																														## whois lookup
 alias ls="sudo ls -al"																												## ls fix
 alias top="nice top -j -P -a"																										## top with jail-id, multicore cpu and full commandline info
+alias updatedots="cd ~/.dotfiles && git pull && stow -R dotfiles && cd"																## update dots from github
 
 
 ########################
