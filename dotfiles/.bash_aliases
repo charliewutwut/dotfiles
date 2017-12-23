@@ -84,8 +84,11 @@ alias rpi2="sudo tail -F /var/log/syslog-ng/rpi2-bedroom.home.tjanke.dk.syslog.l
 alias rpi3="sudo tail -F /var/log/syslog-ng/rpi3-livingroom.home.tjanke.dk.syslog.log"												## tail rpi3
 
 
-
-
+########################
+#### unifi
+alias server="sudo tail -F /usr/local/share/java/unifi/logs/server.log"																## tail unifi server log
+alias mongodb="sudo tail -F /usr/local/share/java/unifi/logs/mongod.log"															## tail unifi mongodb log
+alias editunifi="sudo ee /usr/local/share/java/unifi/data/system.properties"														## edit unifi system file
 
 
 
