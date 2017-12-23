@@ -5,7 +5,7 @@ alias motd="cat /etc/motd"																											## show message of teh day
 alias swap="swapctl -l -h"																											## check swap usage
 alias mess="sudo tail -F /var/log/messages"																							## tail /var/log/messages
 alias w="whois"																														## whois lookup
-alias ls="sudo ls -al"																													## ls fix and colors
+alias ls="sudo ls -al"																												## ls fix
 alias top="nice top -j -P -a"																										## top with jail-id, multicore cpu and full commandline info
 
 
@@ -17,14 +17,38 @@ alias top="nice top -j -P -a"																										## top with jail-id, mult
 #### ex.tjanke.dk 
 alias em0="sudo tcpdump -n -e -tttt -i pflog0"																						## tcpdump pflog0
 
-alias ntps="sudo ntpctl -s status"																									## ntp status & peers
-alias ntpp="sudo ntpctl -s peers"																									## ntp status & peers
+alias ntps="sudo ntpctl -s status"																									## ntp status
+alias ntpp="sudo ntpctl -s peers"																									## ntp peers
 
 alias block="sudo pfctl -t blockedips -T add"																						## add ip(s) to pf table <blockedips>
 alias b="sudo pfctl -t blockedips -T add"																							## add ip(s) to pf table <blockedips>
 alias del="sudo pfctl -t blockedips -T delete"																						## del ip(s) from pf table <blockedips>
 alias d="sudo pfctl -t blockedips -T delete"																						## del ip(s) from pf table <blockedips>
 alias blocked="sudo pfctl -t blockedips -T show"																					## list all blocked ip(s)
+
+
+########################
+#### loveeyes.tjanke.dk 
+alias temp="sysctl -a | grep "dev.cpu.*.temperature""																				## show temperature for all cpu(s)
+
+alias pflog="sudo tcpdump -n -e -tttt -i pflog0"																					## tcpdump on pflog0
+alias igb0="sudo tcpdump -n -e -tttt -i pflog0 | grep igb0"																			## tcpdump on igb0
+alias igb1="sudo tcpdump -n -e -tttt -i pflog0 | grep igb1"																			## tcpdump on igb1
+alias igb2="sudo tcpdump -n -e -tttt -i pflog0 | grep igb2"																			## tcpdump on igb2
+
+alias ntps="sudo ntpctl -s status"																									## ntp status
+alias ntpp="sudo ntpctl -s peers"																									## ntp peers
+
+alias mnat="sudo pfctl -a miniupnpd -s nat"																							## show miniupnpd nat in pf
+alias mrules="sudo pfctl -a miniupnpd -s rules"																						## show miniupnpd rules in pf
+
+alias block="sudo pfctl -t blockedips -T add"																						## add ip(s) to pf table <blockedips>
+alias b="sudo pfctl -t blockedips -T add"																							## add ip(s) to pf table <blockedips>
+alias del="sudo pfctl -t blockedips -T delete"																						## del ip(s) from pf table <blockedips>
+alias d="sudo pfctl -t blockedips -T delete"																						## del ip(s) from pf table <blockedips>
+alias blocked="sudo pfctl -t blockedips -T show"																					## list all blocked ip(s)
+
+alias boot="sudo ./wol.py igb1 2C:4D:54:52:2A:D0"																					## wol to cyberzero
 
 
 ########################
