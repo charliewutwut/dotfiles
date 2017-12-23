@@ -5,7 +5,7 @@ alias motd="cat /etc/motd"																											## show message of teh day
 alias swap="swapctl -l -h"																											## check swap usage
 alias mess="sudo tail -F /var/log/messages"																							## tail /var/log/messages
 alias w="whois"																														## whois lookup
-alias ls="ls -al"																													## ls fix and colors
+alias ls="sudo ls -al"																													## ls fix and colors
 alias top="nice top -j -P -a"																										## top with jail-id, multicore cpu and full commandline info
 
 
