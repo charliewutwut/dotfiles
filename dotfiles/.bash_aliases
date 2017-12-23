@@ -75,3 +75,17 @@ alias scan-app-data="sudo -u www /usr/local/bin/php /usr/local/www/nextcloud/occ
 alias update-db="sudo -u www /usr/local/bin/php /usr/local/www/nextcloud/occ maintenance:mimetype:update-db"						## update mimetypes and filecache
 alias prevall="sudo -u www /usr/local/bin/php /usr/local/www/nextcloud/occ preview:generate-all"									## nextcloud app: preview:generate-all
 
+
+########################
+#### syslog 
+alias stuen="sudo tail -F /var/log/syslog-ng/unifi-livingroom.home.tjanke.dk.syslog.log"											## tail unifi ap livingroom
+alias koekken="sudo tail -F /var/log/syslog-ng/unifi-kitchen.home.tjanke.dk.syslog.log"												## tail unifi ap kitchen
+alias rpi2="sudo tail -F /var/log/syslog-ng/rpi2-bedroom.home.tjanke.dk.syslog.log"													## tail rpi2
+alias rpi3="sudo tail -F /var/log/syslog-ng/rpi3-livingroom.home.tjanke.dk.syslog.log"												## tail rpi3
+
+
+
+
+
+
+
