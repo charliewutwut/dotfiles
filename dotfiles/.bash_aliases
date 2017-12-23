@@ -79,3 +79,24 @@ alias webreconfig="sudo poudriere options -c -j FreeBSD_11-1x64 -p WEB"
 
 
 
+########################
+#### Poudriere Aliases
+####
+
+alias nextlog="sudo tail -F /usr/local/www/logs/nextcloud.log"													## tail nextcloud log file
+alias error="sudo tail -F /var/log/nginx/error.log"																## tail nginx error log file
+alias access="sudo tail -F /var/log/nginx/access.log"															## tail nginx access log file
+
+
+alias occ="sudo -u www /usr/local/bin/php /usr/local/www/nextcloud/occ"											## run nextcloud admin tool
+alias ncsettings="sudo -u www /usr/local/bin/php /usr/local/www/nextcloud/occ config:list | more"				## list all nextcloud settings from config.php
+alias ncconfig="sudo ee /usr/local/www/nextcloud/config/config.php"												## edit nextcloud config.php
+
+alias ncupgrade="sudo -u www /usr/local/bin/php /usr/local/www/nextcloud/occ upgrade"							## run nextcloud upgrade process
+alias check-core="sudo -u www /usr/local/bin/php /usr/local/www/nextcloud/occ integrity:check-core"				## check integrity of core code
+alias cleanup="sudo -u www /usr/local/bin/php /usr/local/www/nextcloud/occ files:cleanup"						## cleanup filecache
+alias scan="sudo -u www /usr/local/bin/php /usr/local/www/nextcloud/occ files:scan"								## rescan nextcloud filesystem
+alias scan-app-data="sudo -u www /usr/local/bin/php /usr/local/www/nextcloud/occ files:scan-app-data"			## rescan nextcloud appdata folder
+alias update-db="sudo -u www /usr/local/bin/php /usr/local/www/nextcloud/occ maintenance:mimetype:update-db"	## update mimetypes and filecache
+alias prevall="sudo -u www /usr/local/bin/php /usr/local/www/nextcloud/occ preview:generate-all"				## nextcloud app: preview:generate-all
+
