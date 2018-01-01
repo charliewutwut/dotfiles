@@ -56,26 +56,32 @@ alias aupdatejail="sudo poudriere jail -u -j FreeBSD_11-1x64-APU"															
 alias updateports="sudo poudriere ports -u -p HEAD"																					## fetch lastest port tree
 alias aupdateports="sudo poudriere ports -u -p HEAD-APU"																			## fetch lastest port tree
 alias wupdateports="sudo poudriere ports -u -p WEB"																					## fetch lastest port tree
+alias woupdateports="sudo poudriere ports -u -p WORD"                                                                               ## fetch latest port tree
 													
 alias addport="sudo ee /usr/local/etc/poudriere.d/port-list"																		## add port to package build list
 alias aaddport="sudo ee /usr/local/etc/poudriere.d/port-apu-list"																	## add port to package build list
 alias waddport="sudo ee /usr/local/etc/poudriere.d/webproxy"																		## add port to package build list
+alias woaddport="sudo ee /usr/local/etc/poudriere.d/wordpress"                                                                      ## add port to package build list
 
 alias checkconf="sudo poudriere options -j FreeBSD_11-1x64 -p HEAD -f /usr/local/etc/poudriere.d/port-list"							## check build options for new or changed ports
 alias acheckconf="sudo poudriere options -j FreeBSD_11-1x64-APU -p HEAD-APU -f /usr/local/etc/poudriere.d/port-apu-list"			## check build options for new or changed ports
 alias wcheckconf="sudo poudriere options -j FreeBSD_11-1x64 -p WEB -f /usr/local/etc/poudriere.d/webproxy"							## check build options for new or changed ports
+alias wocheckconf="sudo poudriere options -j FreeBSD_11-1x64 -p WORD -f /usr/local/etc/poudriere.d/wordpress"                       ## check build options for new or changed ports
 
 alias checkallconf="sudo poudriere options -c -j FreeBSD_11-1x64 -p HEAD -f /usr/local/etc/poudriere.d/port-list"					## review options on all ports
 alias acheckallconf="sudo poudriere options -c -j FreeBSD_11-1x64-APU -p HEAD-APU -f /usr/local/etc/poudriere.d/port-apu-list"		## review options on all ports
 alias wcheckallconf="sudo poudriere options -c -j FreeBSD_11-1x64 -p WEB -f /usr/local/etc/poudriere.d/webproxy"					## review options on all ports
+alias wocheckallconf="sudo poudriere options -c -j FreeBSD_11-1x64 -p WORD -f /usr/local/etc/poudriere.d/wordpress"                 ## review options on all ports
 
 alias reconf="sudo poudriere options -c -j FreeBSD_11-1x64 -p HEAD"																	## review buid options on specific port
 alias areconf="sudo poudriere options -c -j FreeBSD_11-1x64-APU -p HEAD-APU"														## review buid options on specific port
 alias wreconf="sudo poudriere options -c -j FreeBSD_11-1x64 -p WEB"																	## review buid options on specific port
+alias woreconf="sudo poudriere options -c -j FreeBSD_11-1x64 -p WORD"                                                               ## review buid options on specific port
 
 alias build="sudo poudriere bulk -j FreeBSD_11-1x64 -p HEAD -f /usr/local/etc/poudriere.d/port-list"								## start build process
 alias abuild="sudo poudriere bulk -j FreeBSD_11-1x64-APU -p HEAD-APU -f /usr/local/etc/poudriere.d/port-apu-list"					## start build process
 alias wbuild="sudo poudriere bulk -j FreeBSD_11-1x64 -p WEB -f /usr/local/etc/poudriere.d/webproxy"									## start build process
+alias wobuild="sudo poudriere bulk -j FreeBSD_11-1x64 -p WORD -f /usr/local/etc/poudriere.d/wordpress"                              ## start build process
 
 
 ########################
