@@ -13,7 +13,7 @@ alias pflog="sudo tcpdump -n -e -tttt -i pflog0"
 alias ntps="sudo ntpctl -s status"
 alias ntpp="sudo ntpctl -s peers"
 
-alias updatedots="cd ~/.dotfiles && git pull && stow -R dotfiles && cd"
+alias dot="cd ~/.dotfiles && git pull && stow -R dotfiles && cd"
 
 
 
