@@ -4,6 +4,7 @@ case $- in
       *) return;;
 esac
 
+
 ## don't put duplicate lines or lines starting with space in the history.
 ## See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -29,10 +30,16 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 
+## load all config in bash completion folder
+for f in /usr/local/etc/bash_completion.d/*; do
+    . $f
+done
+
+
 ## autocomplete stuff
 if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
+  if [ -f /usr/local/share/bash-completion/bash_completion ]; then
+    . /usr/local/share/bash-completion/bash_completion
   elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
   fi
