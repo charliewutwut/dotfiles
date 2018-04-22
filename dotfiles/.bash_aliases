@@ -21,7 +21,7 @@ alias egrep="egrep --color=auto"
 alias fgrep="fgrep --color=auto"
 
 alias md="mkdir -p"
-alias rd="rmdir2"
+alias rd="rmdir"
 alias h="history"
 alias c="clear"
 alias k="clear"
