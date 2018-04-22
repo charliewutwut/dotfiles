@@ -129,17 +129,17 @@ alias hidehidden="defaults write com.apple.finder AppleShowAllFiles FALSE"
 alias copyLastCmd="fc -ln -1 | awk '\''{$1=$1}1'\'' ORS='\'''\'' | pbcopy"
 
 ## svn
-alias svs="svn status"
-alias sa="svn add"
-alias sci="svn ci -m"
-alias sco="svn co"
-alias sup="svn up"
-alias scu="svn cleanup"
-alias sli="svn list"
-alias sdel="svn delete"
-alias sdif="svn diff"
-alias slog="svn log"
-alias smv="svn move"
+alias svs="svnlite status"
+alias sa="svnlite add"
+alias sci="svnlite ci -m"
+alias sco="svnlite co"
+alias sup="svnlite up"
+alias scu="svnlite cleanup"
+alias sli="svnlite list"
+alias sdel="svnlite delete"
+alias sdif="svnlite diff"
+alias slog="svnlite log"
+alias smv="svnlite move"
 
 
 
