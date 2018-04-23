@@ -91,7 +91,7 @@ alias d="sudo pfctl -t blockedips -T delete"
 alias blocked="sudo pfctl -t blockedips -T show"
 
 alias boot="sudo ./wol.py igb1 2C:4D:54:52:2A:D0"
-alias zupdate="sudo chown -R nobody:nobody /zbackup/share && sudo chmod -R a+rwx /zbackup/share"
+alias zupdate="sudo chown -R nobody:nobody /zbackup/share && sudo chmod -R 0644 /zbackup/share"
 
 
 ########################
