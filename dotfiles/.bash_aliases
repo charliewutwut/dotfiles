@@ -74,6 +74,7 @@ alias temp="sysctl -a | grep "dev.cpu.*.temperature""
 
 alias pflog="sudo tcpdump -n -e -tttt -i pflog0"
 alias em0="sudo tcpdump -n -e -tttt -i pflog0 | grep em0"
+alias igb="sudo tcpdump -n -e -tttt -i pflog0 | grep -w 'igb[0-2]'"
 alias igb0="sudo tcpdump -n -e -tttt -i pflog0 | grep igb0"
 alias igb1="sudo tcpdump -n -e -tttt -i pflog0 | grep igb1"
 alias igb2="sudo tcpdump -n -e -tttt -i pflog0 | grep igb2"
