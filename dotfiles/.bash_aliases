@@ -93,6 +93,7 @@ alias blocked="sudo pfctl -t blockedips -T show"
 
 alias boot="sudo ./wol.py igb1 2C:4D:54:52:2A:D0"
 alias zupdate="sudo chown -R nobody:nobody /zbackup/share && sudo chmod -R 0777 /zbackup/share"
+alias zcleanup="printf 'find /zbackup/share/ -name Sample -exec rm -rf {} \; \nfind /zbackup/share/ -type f -name "*.no.*" -exec rm -f {} \; \n'"
 
 
 ########################
