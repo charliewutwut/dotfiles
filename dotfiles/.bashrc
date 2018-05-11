@@ -33,6 +33,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+## Load bash_aliases2 if it exsist. Used for local aliases
+if [ -f ~/.bash_aliases2 ]; then
+    . ~/.bash_aliases2
+fi
 
 ## load all config in bash completion folder
 for f in /usr/local/etc/bash_completion.d/*; do
