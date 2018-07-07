@@ -50,14 +50,12 @@ alias motd="cat /etc/motd"
 ## Random
 alias swap="swapctl -l -h"
 alias mess="sudo tail -F /var/log/messages"
+alias maillog="sudo tail -F /var/log/maillog"
 alias w="whois"
 alias top="nice top -j -P -a"
 alias top2="top -m io -o write -s 1"
 alias gstat="gstat -acosp"
 alias dig="drill"
-
-## Edit this file
-alias aliases="nano ~/.bash_aliases" # usage: type `aliases` in Terminal
 
 ## Navigate to location X
 alias home="cd ~"
