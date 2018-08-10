@@ -48,13 +48,13 @@ alias txa="tmux a -t cyb"
 alias motd="cat /etc/motd"
 
 ## Random
-alias swap="swapctl -l -h"
+alias swap="nice swapctl -l -h"
 alias mess="sudo tail -F /var/log/messages"
 alias maillog="sudo tail -F /var/log/maillog"
 alias w="whois"
 alias top="nice top -j -P -a"
-alias top2="top -m io -o write -s 1"
-alias gstat="gstat -acosp"
+alias top2="nice top -m io -o write -s 1"
+alias gstat="nice gstat -copI 1s"
 alias dig="drill"
 
 ## Navigate to location X
