@@ -1,7 +1,8 @@
+#!/usr/bin/env bash
 ########################
 #### Shared aliases
 
-## Make all aliases below available with sudo 
+## Enable aliases to be sudo’ed
 alias sudo="sudo "
 
 ## Update dotfiles
@@ -122,8 +123,8 @@ alias bdr="brew doctor"
 alias bed="brew edit"
 
 ## osx
-alias dsclean="find . -type f -name .DS_Store -delete"
-alias flush="dscacheutil -flushcache"
+alias dsclean="find . -type f -name '*.DS_Store' -ls -delete"
+alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 alias showhidden="defaults write com.apple.finder AppleShowAllFiles TRUE"
 alias hidehidden="defaults write com.apple.finder AppleShowAllFiles FALSE"
 alias copyLastCmd="fc -ln -1 | awk '\''{$1=$1}1'\'' ORS='\'''\'' | pbcopy"
