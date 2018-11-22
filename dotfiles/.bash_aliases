@@ -52,11 +52,11 @@ alias motd="cat /etc/motd"
 alias swap="nice swapctl -l -h"
 alias mess="sudo tail -F /var/log/messages"
 alias maillog="sudo tail -F /var/log/maillog"
-alias w="whois"
+alias w="nice whois"
 alias top="nice top -j -P -a"
 alias top2="nice top -m io -o write -s 1"
 alias gstat="nice gstat -copI 1s"
-alias dig="drill"
+alias dig="nice drill"
 
 ## Navigate to location X
 alias home="cd ~"
