@@ -56,7 +56,7 @@ alias w="nice whois"
 alias top="nice top -j -P -a"
 alias top2="nice top -m io -o write -s 1"
 alias gstat="nice gstat -copI 1s"
-alias dig="nice drill"
+#alias dig="nice drill" # Installing bind-tools on all servers instead
 
 ## Navigate to location X
 alias home="cd ~"
