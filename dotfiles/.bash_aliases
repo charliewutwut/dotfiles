@@ -56,15 +56,12 @@ alias w="nice whois"
 alias top="nice top -j -P -a"
 alias top2="nice top -m io -o write -s 1"
 alias gstat="nice gstat -copI 1s"
-#alias dig="nice drill" # Installing bind-tools on all servers instead
+alias air="screen /dev/cu.Airconsole-1 115200"
 
 ## Navigate to location X
 alias home="cd ~"
 alias desktop="cd ~/Desktop/"
 alias repos="cd ~/Documents/GitHub/"
-
-## Navigate to ansible project directory
-alias ans="clear && cd ~/Documents/GitHub/ansible/"
 
 
 ########################
