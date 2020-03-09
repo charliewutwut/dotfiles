@@ -4,6 +4,12 @@ case $- in
       *) return;;
 esac
 
+## PS1 with colors: [username@hostname current dir]
+export PS1="[\[\e[36m\]\u\[\e[m\]@\[\e[35m\]\h\[\e[m\] \[\e[33m\]\w\[\e[m\]] "
+
+## PS1 without colors
+#export PS1="[\u@\h \w] "
+
 ## ifconfig CIDR format for FreeBSD
 export IFCONFIG_FORMAT=inet:cidr,inet6:cidr
 
