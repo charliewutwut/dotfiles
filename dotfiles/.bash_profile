@@ -7,7 +7,7 @@ echo -e '\033]2;'$(hostname)'\007'
 
 ## Load .bashrc if it exsist
 if [ -f ~/.bashrc ]; then
-	. ~/.bashrc;
+    . ~/.bashrc;
 fi
 
 ## Load aliases, if it exsist
@@ -22,8 +22,8 @@ fi
 
 # Lang
 if [ $(hostname) == "ex.tjanke.dk" ]; then
-	export LC_ALL=da_DK.UTF-8
-	export LANG=da_DK.UTF-8
+    export LC_ALL=da_DK.UTF-8
+    export LANG=da_DK.UTF-8
 fi
 
 ## iTerm2 BASH integration in BASH

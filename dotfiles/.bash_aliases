@@ -40,10 +40,11 @@ alias ipy="ipython"
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 ## tmux
-alias tmux="tmux -2"
+alias tmux="nice tmux -2"
 alias txl="tmux ls"
 alias txn="tmux new -s cyb"
-alias txa="tmux a -t cyb"
+alias txa="tmux attach-session"
+#alias txa="tmux a -t cyb"
 
 ## Show motd
 alias motd="cat /etc/motd"
