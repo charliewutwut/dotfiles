@@ -2,7 +2,7 @@
 ########################
 #### Shared aliases
 
-## Enable aliases to be sudo’ed
+## Enable sudo on aliases
 alias sudo="sudo "
 
 ## Update dotfiles
@@ -44,7 +44,6 @@ alias tmux="nice tmux -2"
 alias txl="tmux ls"
 alias txn="tmux new -s cyb"
 alias txa="tmux attach-session"
-#alias txa="tmux a -t cyb"
 
 ## Show motd
 alias motd="cat /etc/motd"
@@ -58,7 +57,8 @@ alias top="nice top -j -P -a"
 alias top2="nice top -m io -o write -s 1"
 alias gstat="nice gstat -copI 1s"
 alias air="screen /dev/cu.Airconsole-1 115200"
-alias getcert="sudo -u certgrinder /usr/home/certgrinder/virtualenv/bin/certgrinder --config-file /usr/home/certgrinder/certgrinder.conf --quiet --now periodic"
+alias air2="screen /dev/cu.Airconsole-1 9600"
+alias getcert="sudo -u certgrinder /usr/local/bin/certgrinder --config-file /usr/local/etc/certgrinder/certgrinder.conf --quiet --now periodic"
 
 ## Navigate to location X
 alias home="cd ~"
