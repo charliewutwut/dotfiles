@@ -52,6 +52,9 @@ alias motd="cat /etc/motd"
 alias swap="nice swapctl -l -h"
 alias mess="sudo tail -F /var/log/messages"
 alias maillog="sudo tail -F /var/log/maillog"
+alias slog="sudo tail -F /var/log/supervisord.log"
+alias pqlog="sudo tail -F /var/log/postgresql.log"
+alias palog="sudo tail -F /var/log/patroni/patroni.log"
 alias w="nice whois"
 alias top="nice top -j -P -a"
 alias top2="nice top -m io -o write -s 1"
@@ -128,18 +131,7 @@ alias showhidden="defaults write com.apple.finder AppleShowAllFiles TRUE"
 alias hidehidden="defaults write com.apple.finder AppleShowAllFiles FALSE"
 alias copyLastCmd="fc -ln -1 | awk '\''{$1=$1}1'\'' ORS='\'''\'' | pbcopy"
 
-## svn
-alias svs="svnlite status"
-alias sa="svnlite add"
-alias sci="svnlite ci -m"
-alias sco="svnlite co"
-alias sup="svnlite up"
-alias scu="svnlite cleanup"
-alias sli="svnlite list"
-alias sdel="svnlite delete"
-alias sdif="svnlite diff"
-alias slog="svnlite log"
-alias smv="svnlite move"
+
 
 
 
