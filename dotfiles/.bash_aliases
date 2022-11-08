@@ -46,7 +46,7 @@ alias txn="tmux new -s cyb"
 alias txa="tmux attach-session"
 
 ## Show motd
-alias motd="cat /etc/motd"
+alias motd="cat /etc/motd.template"
 
 ## Random
 alias swap="nice swapctl -l -h"
