@@ -62,6 +62,7 @@ alias gstat="nice gstat -copI 1s"
 alias air="screen /dev/cu.Airconsole-1 115200"
 alias air2="screen /dev/cu.Airconsole-1 9600"
 alias getcert="sudo -u certgrinder /usr/local/bin/certgrinder --config-file /usr/local/etc/certgrinder/certgrinder.conf --quiet --now periodic"
+alias fixperl="export LANGUAGE=en_US.UTF-8 && export LANG=en_US.UTF-8 && export LC_ALL=en_US.UTF-8 && sudo locale-gen en_US.UTF-8 && sudo dpkg-reconfigure locales"
 
 ## Navigate to location X
 alias home="cd ~"
