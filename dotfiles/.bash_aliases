@@ -113,8 +113,7 @@ alias bcdr="brew cask doctor"
 alias bced="brew cask edit"
 
 ## homebrew
-alias bup="brew update && brew upgrade"
-alias bupc="brew update && brew upgrade --cleanup"
+alias bupc="brew update && brew upgrade --greedy && brew cleanup"
 alias bout="brew outdated"
 alias bin="brew install"
 alias brm="brew uninstall"
